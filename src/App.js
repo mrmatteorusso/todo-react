@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Input from "./components/Input";
 import Output from "./components/Output";
+import Header from "./components/Header";
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container">
+      <Header />
       <Input handleInput={addInput} />
       <Output handleOutput={itemList} handleDelete={deleteTodo} />
 
