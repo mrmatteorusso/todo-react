@@ -4,14 +4,12 @@ function Input({ handleInput }) {
   const [input, setInput] = useState("");
   const addTodo = (todo) => {
     if (todo.length < 1) return;
-    console.log(todo.length);
     const newTodo = {
       id: Math.random(),
       todo: todo,
     };
     handleInput(newTodo);
 
-    // console.log(handleInput);
     setInput("");
   };
 
