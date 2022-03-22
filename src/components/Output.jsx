@@ -1,10 +1,10 @@
-function Output({ handleOutput, handleDelete }) {
+function Output({ items, handleDelete }) {
   return (
     <ul>
-      {handleOutput
+      {items
         .map((todo) => (
           <li key={todo.id}>
-            {todo.todo}
+            <div className="inputText">{todo.todo}</div>
             <button onClick={() => handleDelete(todo.id)}>&times;</button>
           </li>
         ))

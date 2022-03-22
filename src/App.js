@@ -20,7 +20,7 @@ function App() {
     <div className="container">
       <Header />
       <Input handleInput={addInput} />
-      <Output handleOutput={itemList} handleDelete={deleteTodo} />
+      <Output items={itemList} handleDelete={deleteTodo} />
 
     </div>
   );

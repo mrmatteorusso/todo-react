@@ -1,16 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
-  align-items: center;
   justify-content: center;
-  /* height: 100vh; */
+}
+.container {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
-/* .container {
-  background-color: aqua;
-  display: flex;
-  flex-direction: column;
-} */
+.main-title {
+  margin: 2rem 0 1rem 0;
+}
+
+h1 {
+  text-align: center;
+}
 
 input {
   border-radius: 10px;
@@ -21,4 +30,22 @@ input {
 button {
   padding: 0.5rem 0.75rem;
   border-radius: 10px;
+}
+li {
+  background-color: rgb(214, 214, 214);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0.75rem;
+  align-items: center;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+}
+li:nth-child(odd) {
+  border-left: 5px solid rgb(76, 166, 240);
+}
+li:nth-child(even) {
+  border-left: 5px solid rgb(240, 76, 76);
+}
+ul {
+  list-style: none;
 }
